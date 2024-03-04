@@ -4,7 +4,7 @@ import auth from '../Middlewares/auth';
 
 const productRouter = express.Router();
 
-productRouter.post('/api/v1/product/create', auth, productController.addProduct);
+productRouter.post('/api/v1/product/create', productController.addProduct);
 
 productRouter.get('/api/v1/product/all', auth, productController.getProducts);
 
